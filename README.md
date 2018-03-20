@@ -1,12 +1,12 @@
-# twitter_crawler(트위터 크롤러)
-twitter advanced search page crawler
-트위터 고급 검색 페이지 크롤러
+# 트위터 크롤러(twitter_crawler)
+트위터 고급 검색 페이지 크롤러(twitter advanced search page crawler)
+
 
 
 ## 실험 환경(tested environment)
 
-Chrome 65.0.3325.162(64bit)
-크롬 65.0.3325.162(64비트)
+크롬 65.0.3325.162(64비트)(Chrome 65.0.3325.162(64bit))
+
 
 
 ## 사용법(how to use)
@@ -28,6 +28,9 @@ console.save(data, "filename.json");
 ```
 + if you want to chage the json file to csv file, run jsonToCsv.py with python. This code need to be modify the variable filename to your json file's name(line 2).
 
+* * *
+
+
 1. 트위터 고급검색 페이지로 이동한다.(https://twitter.com/search-advanced?lang=ko)
 2. 검색하고자 하는 데이터로 검색 페이지 항목들을 채운 뒤 검색 버튼을 누른다.
 3. 검색 결과 화면에서 F12를 눌러 개발자 도구 창을 연다.
@@ -46,5 +49,4 @@ console.save(data, "filename.json");
 + 만약 json으로 생성된 결과를 csv 파일로 변환하고 싶다면, jsonToCsv.py파일을 실행해 해당 파일을 csv로 변환하세요. 파이썬 코드 실행 전에 코드 내의 변수 filename을 json파일의 파일 이름으로 대체해 주셔야 합니다(line 2).
 
 ## 안내 사항(Alerts)
-this code only crawling the text in each tweets, not inclue emoji, image et all.
-이 코드는 트윗 내의 텍스트만 추출하는 코드입니다. 이모티콘, 이미지 등은 추출되지 않습니다.
+이 코드는 트윗 내의 텍스트만 추출하는 코드입니다. 이모티콘, 이미지 등은 추출되지 않습니다.(this code only crawling the text in each tweets, not inclue emoji, image et all.)
