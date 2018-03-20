@@ -24,7 +24,6 @@ scrollBot()
 getTweet();
 console.save(data, "filename.json");
 //replace filename as what you want.
-//filename 부분을 원하는 파일 이름으로 대체하세요.
 ```
 + if you want to chage the json file to csv file, run jsonToCsv.py with python. This code need to be modify the variable filename to your json file's name(line 2).
 
@@ -43,7 +42,6 @@ scrollBot()
 ```sh
 getTweet();
 console.save(data, "filename.json");
-//replace filename as what you want.
 //filename 부분을 원하는 파일 이름으로 대체하세요.
 ```
 + 만약 json으로 생성된 결과를 csv 파일로 변환하고 싶다면, jsonToCsv.py파일을 실행해 해당 파일을 csv로 변환하세요. 파이썬 코드 실행 전에 코드 내의 변수 filename을 json파일의 파일 이름으로 대체해 주셔야 합니다(line 2).
