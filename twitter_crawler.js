@@ -43,16 +43,16 @@ async function scrollBot(day){
         let cur = document.body.scrollHeight;
         window.scrollTo(0,document.body.scrollHeight);
         await sleep(1000);
-        try {
-            let now = document.body.scrollHeight;
-            let lastItem = $(".stream-items > li").last().children().children()[1].firstElementChild;
-            let data = $(lastItem);
-            let date = data[0].outerText.split("\n")[5].split(" ")[3].slice(0,-1)
-            if(day != date) break;
-        } catch (e) {
-
-        }
+        // try {
+        //     let now = document.body.scrollHeight;
+        //     let lastItem = $(".stream-items > li").last().children().children()[1].firstElementChild;
+        //     let data = $(lastItem);
+        //     let date = data[0].outerText.split("\n")[5].split(" ")[3].slice(0,-1)
+        //     if(day != date) break;
+        // } catch (e) {
+        //
+        // }
     }
-    getTweet();
-    console.save(data, "data.json");
+    // getTweet();
+    // console.save(data, "data.json");
 }
